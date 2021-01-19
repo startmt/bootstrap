@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+      "paths": {
+        "@kenta/services": ["services/lib"],
+        "@kenta/components": ["components/lib"],
+      }
+  }
+}

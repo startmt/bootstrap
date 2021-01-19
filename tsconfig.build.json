@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "module": "commonjs",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "rootDir": "./lib",
+      "allowJs": true, // allow for use normal js
+      "sourceMap": true, // source map to real code
+      "moduleResolution": "node", // use node for resolve module
+      "noImplicitReturns": true,
+      "esModuleInterop": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+}

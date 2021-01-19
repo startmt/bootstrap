@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "kenta",
+  "version": "1.0.0",
+  "description": "root project for monorepo management",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {    
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
+    "compile": "tsc -b tsconfig.build.json"
+  }
+}
