@@ -1,9 +1,14 @@
 {
     "name": "@kenta/components",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/index.js",
     "license": "MIT",
     "private": true,
+    "scripts": {
+      "build": "npm run clean && npm run compile",
+      "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
+      "compile": "tsc -b tsconfig.build.json"
+    },
     "dependencies": {
       "@testing-library/jest-dom": "5.11.4",
       "@testing-library/react": "11.1.0",

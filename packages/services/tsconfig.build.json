@@ -1,16 +1,13 @@
 {
-    "extends": "../../tsconfig.build.json",
-    "compilerOptions": {
-      "jsx": "react",
-      "baseUrl": ".",
-      "rootDir": "lib",
-      "outDir": "dist",
-      "composite": true,
-    },
-    "include": [
-      "lib/**/*"
-    ],
-    "references": [
-        { "path": "../components/tsconfig.build.json" }
-    ]
+  "extends": "../../tsconfig.build.json",
+
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./lib"
+  },
+  "include": [
+    "lib/**/*"
+  ]
 }

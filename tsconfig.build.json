@@ -3,8 +3,9 @@
       "baseUrl": ".",
       "module": "commonjs",
       "target": "es5",
+      "jsx": "react",
       "lib": ["es6", "dom"],
-      "rootDir": "./lib",
+      "rootDir": ".",
       "allowJs": true, // allow for use normal js
       "sourceMap": true, // source map to real code
       "moduleResolution": "node", // use node for resolve module
@@ -13,7 +14,22 @@
       "noImplicitThis": true,
       "noImplicitAny": true,
       "strictNullChecks": true,
+      "paths": {
+        "@kenta/services": ["services/lib"],
+        "@kenta/components": ["components/lib"],
+      }
     },
+    "references": [
+      {
+        "path": "./packages/services/tsconfig.build.json"
+      },
+      {
+        "path": "./packages/components/tsconfig.build.json"
+      },
+      {
+        "path": "./packages/adapter/tsconfig.build.json"
+      }
+    ],
     "exclude": [
       "node_modules",
       "dist"

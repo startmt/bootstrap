@@ -2,8 +2,13 @@
     "name": "@kenta/adapter",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "dist/index.js",
     "license": "MIT",
-    "private": true
+    "private": true,
+    "scripts": {
+      "build": "npm run clean && npm run compile",
+      "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
+      "compile": "tsc -b tsconfig.build.json"
+    }
   }
   
