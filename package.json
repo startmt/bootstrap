@@ -6,10 +6,11 @@
   "main": "index.js",
   "license": "MIT",
   "workspaces": [
+    "backoffice",
     "packages/*"
   ],
   "scripts": {    
-    "build": "yarn workspaces run clean && yarn run compile",
+    "build": "yarn workspaces run clean && yarn workspaces run build",
     "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
     "compile": "tsc -b tsconfig.build.json"
   }

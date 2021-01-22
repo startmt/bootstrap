@@ -19,17 +19,6 @@
         "@kenta/components": ["components/lib"],
       }
     },
-    "references": [
-      {
-        "path": "./packages/services/tsconfig.build.json"
-      },
-      {
-        "path": "./packages/components/tsconfig.build.json"
-      },
-      {
-        "path": "./packages/adapter/tsconfig.build.json"
-      }
-    ],
     "exclude": [
       "node_modules",
       "dist"
