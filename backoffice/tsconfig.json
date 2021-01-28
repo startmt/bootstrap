@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "checkJs": false,
+    "paths": {
+        "@kenta/components": ["../packages/components/lib"],
+        "@kenta/adater": ["../packages/adapter/lib"],
+        "@kenta/services": ["../packages/services/lib"]
+    }
+  },
+  "references": [
+    {
+      "path": "../packages/services/tsconfig.build.json"
+    },
+    {
+      "path": "../packages/components/tsconfig.build.json"
+    },
+    {
+      "path": "../packages/adapter/tsconfig.build.json"
+    }
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
