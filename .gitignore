@@ -1,5 +1,8 @@
 node_modules
 dist
+tsconfig.build.tsbuildinfo
 packages/*/node_modules
 packages/*/dist
 backoffice/node_modules
+backoffice/tsconfig.build.tsbuildinfo
+packages/*/tsconfig.build.tsbuildinfo

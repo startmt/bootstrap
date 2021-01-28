@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
+import * as H from 'history';
 
 import { IUserPaginationProps } from './inteface';
 import { getSearchParam } from './useSearchParam';
@@ -24,7 +25,7 @@ export const usePagination = (props: IUserPaginationProps) => {
     const { namespace = '', parameter = 'page', initialTotalPages = 1 } = props;
 
     const history = useHistory();
-    const location = useLocation();
+    const location: any = useLocation();
     const [totalPages, setTotalPages] = useState<number>(initialTotalPages);
 
     const searchParam: string = namespace ? `${namespace}_${parameter}` : parameter;

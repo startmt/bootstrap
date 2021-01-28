@@ -12,7 +12,7 @@
       "noImplicitReturns": true,
       "esModuleInterop": true,
       "noImplicitThis": true,
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "strictNullChecks": true,
       "paths": {
         "@kenta/services": ["services/lib"],

@@ -5,7 +5,8 @@
     "composite": true,
     "declaration": true,
     "outDir": "./dist",
-    "rootDir": "./lib"
+    "rootDir": "./lib",
+    "allowJs": true,
   },
   "include": [
     "lib/**/*"

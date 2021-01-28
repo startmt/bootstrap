@@ -10,6 +10,7 @@
     "packages/*"
   ],
   "scripts": {    
+    "build-test": "yarn workspaces backoffice run build",
     "build": "yarn workspaces run clean && yarn workspaces run build",
     "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
     "compile": "tsc -b tsconfig.build.json"
