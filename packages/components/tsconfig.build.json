@@ -5,7 +5,13 @@
     "composite": true,
     "declaration": true,
     "outDir": "./dist",
-    "rootDir": "./lib"
+    "rootDir": "./lib",
+    "paths": {
+      "~/*": ["./lib/*"],
+      "@kenta/adapter": ["../adapter/lib"],
+      "@kenta/backoffice": ["../../backoffice/src"],
+      "@kenta/services": ["../services/lib"]
+    }
   },
   "include": [
     "lib/**/*"

@@ -22,6 +22,7 @@
     "isolatedModules": true,
     "checkJs": false,
     "paths": {
+        "~/*": ["./lib/*"],
         "@kenta/components": ["../packages/components/lib"],
         "@kenta/adater": ["../packages/adapter/lib"],
         "@kenta/services": ["../packages/services/lib"]

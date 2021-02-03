@@ -7,6 +7,13 @@
     "outDir": "./dist",
     "rootDir": "./lib",
     "allowJs": true,
+    "paths": {
+      "~/*": ["./lib/*"],
+      "@kenta/adapter": ["../adapter/lib"],
+      "@kenta/backoffice": ["../../backoffice/src"],
+      "@kenta/components": ["../components/lib"]
+    },
+    
   },
   "include": [
     "lib/**/*"

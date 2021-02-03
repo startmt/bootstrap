@@ -1,14 +1,20 @@
 {
-    "name": "@kenta/adapter",
-    "version": "1.0.0",
-    "description": "",
-    "main": "dist/index.js",
-    "license": "MIT",
-    "private": true,
-    "scripts": {
-      "build": "npm run clean && npm run compile",
-      "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
-      "compile": "tsc -b tsconfig.build.json"
-    }
+  "name": "@kenta/adapter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
+    "compile": "tsc -b tsconfig.build.json"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "js-cookie": "^2.2.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3",
+    "typedi": "^0.10.0"
   }
-  
+}
