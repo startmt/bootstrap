@@ -37,6 +37,9 @@
     },
     {
       "path": "../packages/adapter/tsconfig.build.json"
+    },
+    {
+      "path": "../packages/shared/tsconfig.build.json"
     }
   ],
   "include": [

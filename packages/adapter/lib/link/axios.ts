@@ -1,7 +1,10 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios'
 import { from, Observable, throwError } from 'rxjs'
 import { catchError, map } from 'rxjs/operators'
-// import Cookie from 'js-cookie'
+import Cookie from 'js-cookie'
+import {
+  variable
+} from '@kenta/shared'
 import { isEmpty } from 'lodash'
 // import { CookieKeyEnum } from '~h/stores/storages/constants/cookieConstant'
 
@@ -11,7 +14,7 @@ import {
   IConfigHeader,
   IConfigurable
 } from './iApi'
-import { ApiError } from '../error/error'
+import { ApiError } from '../error'
 
 
 export class Axios implements IApi {
@@ -56,8 +59,7 @@ export class Axios implements IApi {
   
     private _serializeUrl(url: string): string {
       const hasExistingParams = /\?/g.test(url)
-      const lang = 'EN'
-      // const lang = Cookie.get(CookieKeyEnum.LANG) || 'EN'
+      const lang = Cookie.get(variable.CookieEnum.LANG) || 'EN'
       return `${url}${!hasExistingParams ? `?lang=${lang}` : `&lang=${lang}`}`
     }
   

@@ -9,23 +9,12 @@
     "allowJs": true,
     "paths": {
       "~/*": ["./lib/*"],
-      "@kenta/shared": ["../shared/lib"],
       "@kenta/adapter": ["../adapter/lib"],
       "@kenta/backoffice": ["../../backoffice/src"],
-      "@kenta/components": ["../components/lib"]
+      "@kenta/components": ["../components/lib"],
+      "@kenta/services": ["../services/lib"]
     },
   },
-  "references": [
-    {
-      "path": "../shared/tsconfig.build.json"
-    },
-    {
-      "path": "../components/tsconfig.build.json"
-    },
-    {
-      "path": "../adapter/tsconfig.build.json"
-    }
-  ],
   "include": [
     "lib/**/*"
   ]

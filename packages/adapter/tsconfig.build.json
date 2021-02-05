@@ -8,11 +8,17 @@
       "rootDir": "./lib",
       "paths": {
         "~/*": ["lib/*"],
+        "@kenta/shared": ["../shared/lib"],
         "@kenta/components": ["../components/lib"],
         "@kenta/backoffice": ["../../backoffice/src"],
         "@kenta/services": ["../services/lib"]
       }
     },
+    "references": [
+      {
+        "path": "../shared/tsconfig.build.json"
+      },
+    ],
     "include": [
       "lib/**/*"
     ]

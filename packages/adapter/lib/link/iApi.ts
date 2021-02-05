@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs'
-import { ApiError } from '../error/error'
+import { ApiError } from '../error'
 
 export interface IConfigHeader {
   Authorization?: string

@@ -11,8 +11,8 @@
     "compile": "tsc -b tsconfig.build.json"
   },
   "dependencies": {
+    "@types/js-cookie": "^2.2.6",
     "axios": "^0.21.1",
-    "js-cookie": "^2.2.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3",
     "typedi": "^0.10.0"
